@@ -57,5 +57,5 @@ These results highlight how political events impact market sentiment and emphasi
 
 These findings underscore the importance of political events in shaping investor sentiment, especially for sectors sensitive to policy changes.
 
-Authors: 
+### Authors: 
 Heer Joshi & Shubham Prakash
