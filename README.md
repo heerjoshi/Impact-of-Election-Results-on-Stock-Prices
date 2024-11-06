@@ -1,0 +1,1 @@
+# Impact-of-Election-Results-on-Stock-Prices
