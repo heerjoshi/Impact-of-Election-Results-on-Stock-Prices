@@ -18,12 +18,17 @@ The dataset includes:
 The stock data and Nifty 50 index were retrieved from Yahoo Finance, covering the period from January 1, 2013, to December 31, 2020. This timeframe includes a sufficient estimation and event window to observe the stock price reactions surrounding each election event.
 
 ## Methodology
-The analysis follows an **event study** approach:
-1. **Event Window**: Examines stock price movements from 10 days before to 10 days after each election date.
-2. **Market Model**: Uses an Ordinary Least Squares (OLS) regression to estimate expected returns based on historical data.
-3. **Abnormal Returns (AR)**: Calculated as the difference between actual and expected stock returns.
-4. **Cumulative Abnormal Returns (CAR)**: Aggregates AR across the event window to observe overall election impact.
-5. **Statistical Testing**: t-tests assess the statistical significance of abnormal returns to understand if election events cause notable stock price deviations.
+The analysis employs a rigorous **event study** approach with statistical tests to evaluate the stock market's reaction to the election events.
+
+1. **Event Window**: Observes stock price changes 10 days before and after each election date to capture the full effect.
+2. **Market Model**: Uses an Ordinary Least Squares (OLS) regression to model expected stock returns, accounting for general market movements.
+3. **Abnormal Returns (AR)**: Measures deviations between actual and expected returns during the event window.
+4. **Cumulative Abnormal Returns (CAR)**: Aggregates AR values over the event window to assess the overall election impact.
+5. **Statistical Testing**:
+   - **t-tests**: Test the significance of AR and CAR values to determine if the observed stock price changes are statistically significant.
+   - **Paired t-tests**: Analyze differences in returns before and after each election event, focusing on any significant shifts in stock price behavior.
+   - **Variance Analysis**: Examines return volatility to assess how election events may influence market stability or risk.
+   - **Correlation Analysis**: Investigates correlations between election events and stock returns across different sectors, providing insights into sector-specific sensitivities.
 
 ## Google Colab Notebook
 The Google Colab Notebook titled **"Election_Impact_Stock_Prices_Analysis.ipynb"** contains:
@@ -37,9 +42,14 @@ This notebook enables users to replicate the analysis and visualize stock price 
 ## Results
 ### Key Findings
 1. **2014 Election**: 
-   - The expectation of a pro-business government increased investor optimism, resulting in positive abnormal returns around the event date, particularly in sectors like infrastructure and energy.
+   - A significant positive reaction in sectors like infrastructure and energy, suggesting investor confidence in a pro-business government.
+   - t-tests confirmed statistically significant abnormal returns for several companies, reflecting heightened investor optimism.
+   
 2. **2019 Election**:
-   - While market reactions were generally positive, they were less volatile than in 2014. The "re-election" effect contributed to stability, with fewer short-term fluctuations.
+   - More muted market response compared to 2014. The continuity of the ruling party led to less volatility and stable returns across most sectors.
+   - Paired t-tests indicated fewer significant changes in AR and CAR, consistent with investor expectations of policy stability.
+
+These results highlight how political events impact market sentiment and emphasize the need for investors to consider both statistical significance and market expectations when interpreting stock price movements.
    
 ### Sector-Specific Reactions
 - **IT and Pharmaceuticals**: Mixed responses based on global and local industry challenges.
