@@ -56,3 +56,6 @@ These results highlight how political events impact market sentiment and emphasi
 - **Banking and Infrastructure**: Strong positive abnormal returns, reflecting investor confidence in growth-oriented policies.
 
 These findings underscore the importance of political events in shaping investor sentiment, especially for sectors sensitive to policy changes.
+
+Authors: 
+Heer Joshi & Shubham Prakash
